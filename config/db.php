@@ -2,10 +2,11 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2site',
+    'dsn' => 'mysql:host=localhost;dbname=yii2blog',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8',
+    'tablePrefix' => 'bl_'
 
     // Schema cache options (for production environment)
     //'enableSchemaCache' => true,

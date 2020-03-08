@@ -10,25 +10,14 @@ namespace app\assets;
 use yii\web\AssetBundle;
 
 /**
- * Main application asset bundle.
- *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class AppAsset extends AssetBundle
+class MyAppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        '/web/css/ie.css',
-    ];
-    public $cssOptions = ['condition' => 'lte IE8'];
-
-    public $js = [
-        '/web/js/functions.js',
-        '//vk.com/js/api/openapi.js'
-    ];
-    public $depends = [
-        'app\assets\MyAppAsset',
+        '/web/css/main.css',
     ];
 }
